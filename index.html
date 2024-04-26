@@ -19,6 +19,34 @@
       padding: 0;
       text-align: center; /* 文本居中 */
     }
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      background-size: cover;
+      background-position: center;
+      transition: background-image 0.5s ease;
+    }
+
+    .image-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: blur(5px);
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
     header {
       background-color: #ffffff;
       color: #ffffff;
@@ -150,10 +178,25 @@ nav a {
     <a href="#tieba">西安市第八监狱贴吧</a>
     <input type="text" class="search-box" placeholder="搜索  　　　　　　   ✈" onkeydown="search(event)">
   </nav>
-  
   <div class="image-container">
+    <img src="./img/2.jpg" alt="Image 2">
+    <img src="./img/3.jpg" alt="Image 3">
+    <img src="./img/4.jpg" alt="Image 4">
+    <img src="./img/5.jpg" alt="Image 5">
+    <img src="./img/7.jpg" alt="Image 7">
     <img src="./img/1.jpg" alt="Image 1" style="width: 1296px; height: 364px;">
   </div>
+  <script>
+    const images = document.querySelectorAll('.image-container img');
+    let currentIndex = 0;
+
+    setInterval(() => {
+      images[currentIndex].style.opacity = 0;
+      currentIndex = (currentIndex + 1) % images.length;
+      images[currentIndex].style.opacity = 1;
+      document.body.style.backgroundImage = `url('${images[currentIndex].src}')`;
+    }, 30000); // 切换时间间隔为30秒
+  </script>
   <section id="home">
      <h1><a href="https://mp.weixin.qq.com/s?__biz=MzA5OTc2NzI0MA==&mid=2653625839&idx=1&sn=5d19a0344b31d21054b31ee9453e36af&chksm=8b22fb48bc55725ef38f5f0027c3b0f7cd9a42f220d59acb784e70a68cefda2873b9d7f6ec14&scene=27">西安市第八监狱欢迎您！</a><br>Welcome to Xi'an No.8 Prison!</h1> 
     <p>西安市第八监狱是一所拥有悠久历史和优秀传统的监狱，我们致力于为囚犯提供良好的教育资源和改造环境，帮助他们重新健康、自立、自强。<br>Xi'an No. 8 Prison is a prison with a long history and excellent traditions, and we are committed to providing good educational resources and a rehabilitating environment for prisoners to help them regain their health, self-reliance and self-reliance.</p> 
@@ -202,7 +245,9 @@ nav a {
         <img src="https://ipv6test.wcode.net/badges/ipv6.svg?host=xa8z.github.io" alt="" style="max-width: 100%; height: 24px;"/>
     </a>
     <font style="font-size:16px"><img style="width:32px;height:32px;margin-bottom:-8px" src="https://moe.blog/content/uploadfile/Links/icp.gov.moe.png" /><a href="https://icp.gov.moe" target="_blank"><span style="color:#ff0000">萌</span><span style="color:#ca7900">I</span><span style="color:#48ab18">C</span><span style="color:#2720ac">P</span><span style="color:#9b17ae">备</span> </a><a href="https://icp.gov.moe/?keyword=20241015" target="_blank"> <span style="color:#ff0000">20</span><span style="color:#ca7900">24</span><span style="color:#48ab18">10</span><span style="color:#2720ac">15</span><span style="color:#f40428">号</span></a></font>    </div>
-  </div>
+  </div>          <p>访问量： <span id="visit-count"></span></p>
+</footer>
+<script src="counter.js"></script>
   </section>
   </footer>
   <script>
@@ -220,6 +265,10 @@ nav a {
     window.location.href = "404.html";
   }
 }
+  </script>
+</body>
+</html>
+
   </script>
 </body>
 </html>
