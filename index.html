@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-adsense-account" content="ca-pub-1146227090063251">
+  <title>西安市第八监狱</title>
+  <link rel="icon" type="image/png" href="./img/favicon.png">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      background-color: #f0f0f0;
+      text-align: center;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      transition: background-image 0.5s ease;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .content {
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px;
+    }
+    
+    .section {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    
+    .image-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: blur(5px);
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+    
+    .image-container1 {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+    
+    header {
+      background-color: #ffffff;
+      color: #ffffff;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    
+    header img {
+      width: 100px;
+      height: 100px;
+    }
+    
+    header h1 {
+      margin-left: 10px;
+      font-size: 24px;
+      color: black;
+    }
+    
+    nav {
+      background-color: rgba(255, 0, 0, 0.726);
+      color: #fffb00ee;
+      text-align: center;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    
+    nav a {
+      color: #fffb00ee;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 18px;
+      padding: 0 10px;
+    }
+    
+    .search-box {
+      margin-right: 10px;
+      padding: 5px 10px;
+      border: 2px solid #cccccc;
+      border-radius: 20px;
+      font-size: 16px;
+      color: #999999;
+    }
+    
+    section {
+      padding: 20px;
+      text-align: justify;
+    }
+    
+    section h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+    
+    section p {
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+    
+    footer {
+      background-color: #000000;
+      color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      padding: 5px;
+      margin-top: 50px;
+    }
+    
+    footer div {
+      flex: 1;
+      text-align: center;
+    }
+    
+    img {
+      display: block;
+      margin: auto;
+    }
+    
+    .header-title {
+      text-align: center;
+    }
+    
+    .school-emblem {
+      float: right;
+    }
+    
+    #contact, #copyright {
+      text-align: center;
+      color: #808080;
+      background-color: #000000;
+    }
+    
+    .responsive-image {
+      width: 100%;
+      height: auto;
+      max-width: 1420px;
+    }
+    
+    .image-container2 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    
+    .image {
+      width: 360px;
+      height: 270px;
+      margin-bottom: 10px;
+    }
+    
+    .float-middle {
+      align-self: flex-start;
+      margin: 0 auto;
+      width: 48%;
+    }
+    
+    .iframe-container {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%;
+      overflow: hidden;
+    }
+    
+    .iframe-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    
+    .float-image {
+      width: 720px;
+      height: 540px;
+    }
+  </style>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1146227090063251" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+  <img 
+    src="./img/favicon.png" 
+    class="school-emblem" 
+    alt="校徽"
+    onclick="window.location.href='./color/color.html'"
+    style="cursor: pointer;"  <!-- 可选：使鼠标变成手型，表示可点击 -->
+>
+    <h1 class="header-title">
+      西安市第八监狱　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　适　道　
+      <br>Xi'an No.8 Prison　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　民　兴　　　
+    </h1>
+  </header>
+  
+  <nav>
+    <a href="#home">　　　　首页</a>
+    <a href="#news">新闻</a>
+    <a href="#events">活动</a>
+    <a href="#think">了解我们</a>
+    <a href="#contact">联系</a>
+    <a href="#tieba">西安市第八监狱贴吧</a>
+    <input type="text" class="search-box" placeholder="搜索  　　　　　　   ✈" onkeydown="search(event)">
+  </nav>
+  
+  <div class="image-container1">
+    <img src="./img/1.jpg" alt="监狱图片" class="responsive-image">
+  </div>
+  
+  <div class="content">
+    <section id="home">
+      <div class="section">
+        <h1><a href="https://mp.weixin.qq.com/s?__biz=MzA5OTc2NzI0MA==&mid=2653625839&idx=1&sn=5d19a0344b31d21054b31ee9453e36af&chksm=8b22fb48bc55725ef38f5f0027c3b0f7cd9a42f220d59acb784e70a68cefda2873b9d7f6ec14&scene=27">西安市第八监狱欢迎您！</a><br>Welcome to Xi'an No.8 Prison!</h1>
+        <p>西安市第八监狱是一所历史悠久、传统优秀的监狱。我们始终致力于为囚犯提供良好的教育资源和舒适的改造环境，帮助他们重新找回健康，获得自立，培养自强不息的精神。我们相信，教育和心理支持是改变人生的关键。<br>Xi'an No. 8 Prison is a prison with a long history and excellent traditions. We are committed to providing good educational resources and a comfortable rehabilitating environment for prisoners to help them regain their health, achieve self-reliance, and cultivate a spirit of resilience. We believe that education and psychological support are the keys to transforming lives.</p>
+        <p>我们的狱警队伍庞大而优秀，队员们不仅拥有丰富的执法经验，还具备专业的心理辅导知识。我们的管理方法和矫正理念得到了囚犯的广泛认可和赞赏，体现了我们对人性化管理的坚持。我们的工作旨在营造一个安全、有序的监狱环境，同时关注囚犯的心理与情感需求。<br>Our prison guards are large and excellent, with a wealth of experience and expertise in law enforcement as well as professional knowledge in psychological counseling. Our management methods and correctional concepts are widely recognized and appreciated by prisoners, reflecting our commitment to humane management. Our work aims to create a safe and orderly prison environment while also addressing the psychological and emotional needs of prisoners.</p>
+        <p>我们为囚犯提供的设施非常齐全，包括监舍、食堂、医务室、图书室、体育场等，这些设施为囚犯创造了良好的学习和生活条件。我们设有图书室，鼓励囚犯阅读和学习，以拓宽他们的视野；而运动场则提供了锻炼身体的机会，帮助囚犯保持身体健康。我们坚信，良好的设施能够促进囚犯的全面发展。<br>Our facilities are very complete, including prisons, canteens, infirmaries, libraries, stadiums, and more, which create good learning and living conditions for prisoners. We have a library that encourages prisoners to read and learn, broadening their horizons, while the sports fields provide opportunities for physical exercise, helping prisoners maintain their health. We firmly believe that good facilities can promote the overall development of prisoners.</p>
+      </div>
+    </section>
+    
+    <section id="news">
+      <div class="section">
+        <h2>最新新闻Latest news</h2>
+        <p>开展法律知识宣传教育，增强囚犯的法治意识。</p>
+        <p>举办职业技能培训班，帮助囚犯提升就业能力。</p>
+        <p>组织文体活动，丰富囚犯的文化生活，促进心灵成长。</p>
+        <div class="image-container2">
+          <img src="./img/椒盐活动.jpg" alt="监狱活动" class="image">
+          <img src="./img/监狱事业.jpg" alt="监狱事业" class="image">
+          <img src="./img/京大讲堂.jpg" alt="京大讲堂" class="image">
+        </div>
+      </div>
+    </section>
+    
+    <section id="events">
+      <div class="section">
+        <h2>监狱活动Prison activities</h2>
+        <p>1. <strong>心理健康辅导</strong>：提供心理咨询与辅导服务，帮助囚犯处理情绪问题，缓解心理压力，促进心理健康与复归社会的准备。</p>
+        <p>3. <strong>志愿服务项目</strong>：组织囚犯参与社区志愿服务活动，培养他们的社会责任感和团队合作精神，增强与社会的联系。</p>
+        <p>4. <strong>家属沟通活动</strong>：定期开展与囚犯家属的沟通活动，维护家庭关系，增强囚犯的归属感与改变的动力。</p>
+        <p>5. <strong>艺术创作与表达课程</strong>：开设绘画、音乐、舞蹈等艺术课程，鼓励囚犯通过艺术表达内心情感，提升自我认知与创造力。</p>
+        <p>6. <strong>团队建设与领导力培训</strong>：通过团队合作活动和领导力培训，培养囚犯的领导能力和团队精神，为他们的未来发展奠定基础。</p>
+        <p>7. 西安市第八监狱将举办一次"文化进监"活动，囚犯们将有机会参加各种文化艺术活动，提高自身素养。</p>
+        <p>8. 举办体育比赛，增强囚犯体魄，培养团队合作精神。</p><br>
+        <p>通过这些活动，旨在提供全面的支持与教育，帮助囚犯重建自信，提升技能，为回归社会做好准备。</p>
+      </div>
+    </section>
+    
+    <section id="think">
+      <div class="section">
+        <h2><a href="https://baike.baidu.com/item/%E8%A5%BF%E5%AE%89%E5%B8%82%E7%AC%AC%E5%85%AB%E4%B8%AD%E5%AD%A6/2176528?fr=ge_ala">了解我们Get to know us</a></h2>
+      </div>
+    </section>
+    
+    <section id="tieba">
+      <div class="section">
+        <h2><a href="https://tieba.baidu.com/f?kw=%E8%A5%BF%E5%AE%89%E5%85%AB%E4%B8%AD&ie=utf-8">西安市第八监狱吧Xi'an No. 8 Prison stickers</a></h2>
+        <img src="./img/监狱对比.jpg" alt="监狱对比" class="float-image">
+      </div>
+    </section>
+    
+    <div class="section">
+      <h2>我们与社会We are with society</h2>
+      <a>[哔哩哔哩]直通社会 | 西安特色优质监狱知识培养社会新人才——西安市第八监狱</a>
+    </div>
+  </div>
+  
+  <div style="position: relative; padding: 30% 45%;">
+    <iframe style="position: absolute; width: 100%; height: 80%; left: 0; top: 0;" src="https://player.bilibili.com/player.html?aid=700784918&bvid=BV1jm4y1E7Bt&cid=1193888923&p=1" frameborder="no" scrolling="no"></iframe>
+  </div>
+  
+  <br>
+  
+  <div class="iframe-container">
+    <iframe src="https://sheet.zohopublic.com.cn/sheet/published/tqnji473edc3565be4533aebcb259fb025e1e?mode=embed" frameborder="0" scrolling="no"></iframe>
+  </div>
+  
+  <footer>
+    <section id="contact">
+      <div>
+        <p>联系</p>
+        <p>电话：<del>029 8751 3296</del></p>
+        <p>地址</p>
+        <p><del>陕西省 西安市 东县门8号</del></p>
+      </div>
+    </section>
+    
+    <div>
+      <p>&copy2024 <del>Xi'an No.8 Prison</del></p>
+      <p class="color-changing-text"><span id="colorText1">&copyWuJi Studio</span></p>
+      <nav>
+        <p>网上有害信息举报专区：<a class="text-con__line--link" href="https://www.12377.cn/" target="_blank">中国互联网违法和不良信息举报中心</a>亲爱的市民朋友，上海警方反诈劝阻电话"96110"系专门针对避免您财产被骗受损而设，请您一旦收到来电，立即接听。</p>
+      </nav>
+      <img src="./img/962110.png" alt="举报电话" class="image-container1">
+    </div>
+    
+    <div>
+      <p>西安市第八监狱</p>
+      <p class="color-changing-text"><span id="colorText2"> powered by WuJi_yb</span></p>
+      <img src="./img/事业单位.jpg" alt="事业单位" class="image-container1">
+      <img src="https://uploadstatic.mihoyo.com/bh3/upload/officialsites/202005/youhai_1589857356_1416.png" alt="有害信息举报" class="image-container1">
+      <img src="https://uploadstatic.mihoyo.com/bh3/upload/officialsites/201911/culture_1575020039_5478.png" alt="文化标志" class="image-container1">
+    </div>
+    
+    <div>
+      <a href="https://ipv6test.wcode.net/?q=xa8z.github.io" target="_blank">
+        <img src="https://ipv6test.wcode.net/badges/ipv6.svg?host=xa8z.github.io" alt="IPv6测试" style="max-width: 100%; height: 24px;">
+      </a>
+      <font style="font-size:16px">
+        <img style="width:32px;height:32px;margin-bottom:-8px" src="https://moe.blog/content/uploadfile/Links/icp.gov.moe.png" alt="ICP备案">
+        <a href="https://icp.gov.moe" target="_blank">
+          <span style="color:#ff0000"><del>萌</del></span>
+          <span style="color:#ca7900"><del>I</del></span>
+          <span style="color:#48ab18"><del>C</del></span>
+          <span style="color:#2720ac"><del>P</del></span>
+          <span style="color:#9b17ae"><del>备</del></span>
+        </a>
+        <a href="https://icp.gov.moe/?keyword=20241015" target="_blank">
+          <span style="color:#ff0000"><del>20</del></span>
+          <span style="color:#ca7900"><del>24</del></span>
+          <span style="color:#48ab18"><del>10</del></span>
+          <span style="color:#2720ac"><del>15</del></span>
+          <span style="color:#f40428"><del>号</del></span>
+        </a>
+      </font>
+      <p>目前仍在申请</p>
+      <p>访问量： <span id="visit-count"></span></p>
+      <p class="info" id="ip"></p>
+      <p class="info" id="address"></p>
+      <p class="info" id="current-time"></p>
+      <p class="info" id="refresh-time"></p>
+    </div>
+  </footer>
+
+  <script>
+    // 图片数组定义
+    const backgroundImages = [
+      '千恋万花.jpg', 'BlueArchive.png', 'MINECRAFT.jpg', '2崩子.png', '3崩子.png',
+      '我超，原.png', '崩坏2x3=6.png', '撅屈一.png', '塞尔达.jpg', '芙蓉王.jpg',
+      'miku_1.jpg', 'miku_2.jpg', 'miku_3.jpg', '静音.jpg', '孤独.jpg',
+      '摇滚！.jpeg', '后排靠窗，？？？？.jpg', '科幻巨作.jpg', '别当欧尼酱了.jpg',
+      '小西天土地，在此恭迎天命人.webp', 'M.A.G.A..png', '0d000721.jpg',
+      '地平线五菱宏光.jpg', 'GTAOL.jpg', 'GTAV.jpg', 'GTAVI.jpg', 'GTASA.webp',
+      '2077.jpg', '東方Project.png', '东方Project.jpeg', '摇曳露营.png',
+      '缘之空.jpg', '工作细胞.png', '炮姐.jpg', '噼里啪啦.jpg', 'blbl.jpg',
+      '巴卡巴卡.jpg', 'niconiconi.jpg', '金坷垃.png', '华风夏韵洛水天依.jpg',
+      '河蟹你全家-荼荼丸.jpg', '萌娘百科.webp', '萌娘百科广告位招租.webp'
+    ];
+
+    // 设备检测
+    function detectDevice() {
+      const userAgent = navigator.userAgent.toLowerCase();
+      const isMobile = /mobile|android|iphone|ipad|ipod/.test(userAgent);
+
+      if (isMobile) {
+        const result = confirm("本网站尚未制作适配界面，使用电脑观看更佳。\n\n确定进入？");
+        if (!result) {
+          window.location.href = "about:blank";
+        }
+      }
+    }
+
+    // 随机背景图片
+    function setRandomBackground() {
+      const randomImage = backgroundImages[Math.floor(Math.random() * backgroundImages.length)];
+      document.body.style.backgroundImage = `url(./img/${randomImage})`;
+    }
+
+    // 图片轮播
+    function initImageSlider() {
+      const images = document.querySelectorAll('.image-container img');
+      let currentIndex = 0;
+
+      if (images.length > 0) {
+        images[currentIndex].style.opacity = 1;
+        
+        setInterval(() => {
+          images[currentIndex].style.opacity = 0;
+          currentIndex = (currentIndex + 1) % images.length;
+          images[currentIndex].style.opacity = 1;
+          document.body.style.backgroundImage = `url('${images[currentIndex].src}')`;
+        }, 30000);
+      }
+    }
+
+    // 颜色变化效果
+    function initColorEffects() {
+      const colors = [
+        "#ff0000", "#ff7f00", "#ffff00", "#7fff00", "#00ff00",
+        "#00ff7f", "#00ffff", "#007fff", "#0000ff", "#7f00ff",
+        "#ff00ff", "#ff007f", "#ff0000", "#ff4f00", "#ff7f00",
+        "#ffff00", "#4fff00", "#00ff00", "#00ff4f", "#00ffff",
+        "#004fff", "#0000ff", "#4f00ff", "#7f00ff", "#ff00ff",
+        "#ff00b3", "#ff004f", "#ff0000", "#ff1a1a", "#ff3366",
+        "#ff4d99", "#ff66cc", "#4d4dff", "#9999ff", "#b3b3ff",
+        "#ffff33", "#ffff66", "#ffff99", "#ccffcc", "#b3ffb3",
+        "#99ff99", "#66ff66", "#33ff33", "#00ff00", "#00cc00",
+        "#009900", "#006600", "#003300", "#ff6600", "#ff3300",
+        "#ff0000", "#cc0000", "#990000", "#660000", "#330000",
+        "#ff00cc", "#ff1aff", "#ff33ff", "#ff99ff", "#ff00b3",
+        "#ff0066", "#ff0033", "#ff0000", "#ff1a00", "#ff3300"
+      ];
+      
+      let index = 0;
+      const colorText1 = document.getElementById('colorText1');
+      
+      function changeColor() {
+        if (colorText1) {
+          colorText1.style.color = colors[index];
+          index = (index + 1) % colors.length;
+        }
+      }
+      
+      setInterval(changeColor, 30);
+      
+      // 随机颜色变化效果
+      const colorText2 = document.getElementById('colorText2');
+      
+      if (colorText2) {
+        setInterval(() => {
+          const r = Math.floor(Math.random() * 256);
+          const g = Math.floor(Math.random() * 256);
+          const b = Math.floor(Math.random() * 256);
+          colorText2.style.color = `rgb(${r}, ${g}, ${b})`;
+        }, 30);
+      }
+    }
+
+    // 平滑滚动
+    function initSmoothScrolling() {
+      document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          if (this.getAttribute('href').startsWith('#')) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+              targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+          }
+        });
+      });
+    }
+
+    // 搜索功能
+    function search(event) {
+      if (event.keyCode === 13) {
+        window.location.href = "404.html";
+      }
+    }
+
+    // IP信息获取
+    function fetchIPInfo() {
+      fetch('https://ipinfo.io/json?token=54996a0fe889e8')
+        .then(response => response.json())
+        .then(data => {
+          const ipElement = document.getElementById('ip');
+          const addressElement = document.getElementById('address');
+          
+          if (ipElement) ipElement.textContent = 'IP 地址: ' + (data.ip || '未知');
+          if (addressElement) {
+            const addressParts = [];
+            if (data.city) addressParts.push(data.city);
+            if (data.region) addressParts.push(data.region);
+            if (data.country) addressParts.push(data.country);
+            addressElement.textContent = '地址: ' + (addressParts.length > 0 ? addressParts.join(', ') : '未知');
+          }
+        })
+        .catch(error => {
+          console.error('获取 IP 地址失败:', error);
+        });
+    }
+
+    // 时间显示
+    function initTimeDisplay() {
+      const lastRefreshTime = new Date();
+      const refreshTimeElement = document.getElementById('refresh-time');
+      
+      if (refreshTimeElement) {
+        refreshTimeElement.textContent = '最后刷新时间: ' + lastRefreshTime.toLocaleString();
+      }
+
+      function updateTime() {
+        const now = new Date();
+        const currentTimeElement = document.getElementById('current-time');
+        
+        if (currentTimeElement) {
+          currentTimeElement.textContent = '当前时间: ' + now.toLocaleString();
+        }
+      }
+
+      updateTime();
+      setInterval(updateTime, 1000);
+    }
+
+    // 页面加载完成后初始化
+    window.addEventListener('DOMContentLoaded', () => {
+      detectDevice();
+      setRandomBackground();
+      initImageSlider();
+      initColorEffects();
+      initSmoothScrolling();
+      fetchIPInfo();
+      initTimeDisplay();
+      
+      // 加载哔哩哔哩脚本
+      const script = document.createElement('script');
+      script.src = 'https://s1.hdslb.com/bfs/seed/jinkela/short/b-mirror/biliMirror.umd.mini.js';
+      document.body.appendChild(script);
+      
+      // 浏览器检测
+      if (window.__SERVER_CONFIG__ && window.__SERVER_CONFIG__.isModern === false) {
+        const tipElement = document.querySelector('.old-browser-tip');
+        if (tipElement) {
+          tipElement.innerHTML = '<div class="title">当前浏览器版本较低，为保证您的使用体验，建议使用最新版本的浏览器访问。</div>';
+        }
+      }
+      
+      if (/(Mac|iPhone|iPod|iPad)/i.test(window.navigator.platform)) {
+        document.body.classList.add('mac');
+      } else {
+        document.body.classList.add('win');
+      }
+    });
+  </script>
+  
+  <script src="counter.js"></script>
+  
+
+  <!-- 恭喜你发现了彩蛋————维基娘
+　　  　ｒu‐┐__ 　 ｒu‐┐
+　　 　.} Ω_{' ⌒´ヾｰ､.{　
+　　　´ｒｰﾞｆ（ﾉﾉ）)））!i.｢
+　   　 ﾉ乂k(lﾟ ヮﾟﾉ'ﾉ乂　　
+　　 ´ ' 　 と}i凹{つ 　 '　
+　　 　 　ｆく/{__}〉
+　　 　　　 ´　し'ﾉ　
+
+阅读更多：维基娘（https://mzh.moegirl.org.cn/%E7%BB%B4%E5%9F%BA%E5%A8%98 ）
+本文引自萌娘百科(https://mzh.moegirl.org.cn )，文字内容默认使用《知识共享 署名-非商业性使用-相同方式共享 3.0 中国大陆》协议。
+-->
+</body>
+</html>
